@@ -25,19 +25,19 @@ for (let i = 1; i <= 100; i++) {
    
 //MILESTONE 1
 //MILESTONE 3
-   if (!(i % 3) && !(i % 5)) {
+   if ((i % 3 == 0) && (i % 5 == 0)) {
       box.classList.add("per3per5")
       box.innerHTML = "fizzbuzz";
 
 //MILESTONE 1
 //MILESTONE 3
-   } else if (!(i % 3)) {
+   } else if (i % 3 == 0) {
       box.classList.add("per3")
       box.innerHTML = "fizz";
 
 //MILESTONE 1
 //MILESTONE 3
-   } else if (!(i % 5)) {
+   } else if (i % 5 == 0) {
       box.classList.add("per5")
       box.innerHTML = "buzz";
    } 
