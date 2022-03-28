@@ -11,10 +11,10 @@ body {
   color: black;
 }
 .box {
-  height: 80px;
-  width: 80px;
+  height: 140px;
+  width: 140px;
   margin: 10px;
-  background-color: #1389b2;
+  background-color: #3d88ae;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,10 +27,14 @@ h1 {
   margin-bottom: 50px;
 }
 
-/* :root {
-  background: #183a4a;
-  background: #3d88ae;
-  background: #61d2a4;
-  background: #de5471;
-  background: #f9d277;
-} */
+.per3per5 {
+  background-color: #de5471;
+}
+
+.per3 {
+  background-color: #61d2a4;
+}
+
+.per5 {
+  background-color: #f9d277;
+}

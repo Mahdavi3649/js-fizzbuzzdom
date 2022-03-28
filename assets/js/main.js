@@ -10,8 +10,9 @@ MILESTONE 3
     Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 */
 
-//// Ciclo per stampare tutti i numeri da 1 a 100
 
+//// Ciclo per stampare tutti i numeri da 1 a 100
+//MILESTONE 2
 const row = document.querySelector('.row');
 
 for (let i = 1; i <= 100; i++) {
@@ -19,18 +20,26 @@ for (let i = 1; i <= 100; i++) {
    box.className = 'box';
    box.innerHTML = i;
    row.append(box);
-  
+   box.style.fontWeight = "bold"
+   box.style.fontSize = "larger"
+   
+//MILESTONE 1
+//MILESTONE 3
    if (!(i % 3) && !(i % 5)) {
+      box.classList.add("per3per5")
+      box.innerHTML = "fizzbuzz";
 
-      box.innerHTML = 'fizzbuzz';
-
+//MILESTONE 1
+//MILESTONE 3
    } else if (!(i % 3)) {
-       
-      box.innerHTML = 'buzz';
+      box.classList.add("per3")
+      box.innerHTML = "fizz";
 
+//MILESTONE 1
+//MILESTONE 3
    } else if (!(i % 5)) {
-
-      box.innerHTML = 'fizz';
+      box.classList.add("per5")
+      box.innerHTML = "buzz";
    } 
       
 };
