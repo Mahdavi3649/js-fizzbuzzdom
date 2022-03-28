@@ -8,10 +8,16 @@ body {
   background-color: #183a4a;
   width: 100vw;
   height: 100vh;
+  color: black;
+}
+.box {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  background-color: #1389b2;
   display: flex;
-  flex-direction: column;
-  align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -19,22 +25,6 @@ h1 {
   font-size: 80px;
   text-align: center;
   margin-bottom: 50px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 500px;
-  height: 500px;
-  align-self: center;
-}
-
-.square {
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  margin: 10px;
 }
 
 /* :root {

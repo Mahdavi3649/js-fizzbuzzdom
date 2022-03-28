@@ -12,15 +12,25 @@ MILESTONE 3
 
 //// Ciclo per stampare tutti i numeri da 1 a 100
 
-const divElement = document.querySelector(".container")
-for(let i = 1; i <= 100; i++){
-    
-    if (i % 3 === 0 && i % 5 === 0){
-        console.log('fizzbuzz');
-    }
-    if (i % 3 === 0){
-        console.log('fizz');
-    } else if (i %  5 === 0){
-        console.log('buzz');
-    } 
-}
+const row = document.querySelector('.row');
+
+for (let i = 1; i <= 100; i++) {
+   const box = document.createElement('div');
+   box.className = 'box';
+   box.innerHTML = i;
+   row.append(box);
+  
+   if (!(i % 3) && !(i % 5)) {
+
+      box.innerHTML = 'fizzbuzz';
+
+   } else if (!(i % 3)) {
+       
+      box.innerHTML = 'buzz';
+
+   } else if (!(i % 5)) {
+
+      box.innerHTML = 'fizz';
+   } 
+      
+};
